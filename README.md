@@ -2,7 +2,7 @@
 
 A Progressive Web App (PWA) for browsing and saving recipes from TheMealDB. Built with React, Vite, Tailwind CSS, and shadcn/ui, with a Node.js/Express backend proxy.
 
-![Recipe App](https://via.placeholder.com/800x400/ea580c/ffffff?text=Recipe+App)
+![Recipe App](https://via.placeholder.com/800x400/ea580c/ffffff?text=Recipe+App](https://recipe-app-five-gamma.vercel.app/)](https://recipe-app-five-gamma.vercel.app/)
 
 ## ✨ Features
 
