@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { ArrowLeft, Heart, ExternalLink, Clock, Users } from 'lucide-react';
-import { getMealById, extractIngredients, getYouTubeId, type Meal } from '@/lib/api';
+import { getMealById, extractIngredients, getYouTubeId } from '@/lib/api';
 import { isFavorite, toggleFavorite, getFavorite } from '@/features/favorites/db';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';

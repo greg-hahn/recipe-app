@@ -126,7 +126,8 @@ export async function cacheCategoriesForOffline(
   categories: Array<{
     strCategory: string;
     strCategoryThumb: string;
-    [key: string]: unknown;
+    strCategoryDescription?: string;
+    idCategory?: string;
   }>
 ): Promise<void> {
   if (!categories || categories.length === 0) return;
