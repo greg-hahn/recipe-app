@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ea580c">
+  <title>Offline - Recipe App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    
+    .container {
+      text-align: center;
+      max-width: 400px;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      background: #fee2e2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .icon svg {
+      width: 40px;
+      height: 40px;
+      color: #dc2626;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 0.75rem;
+    }
+    
+    p {
+      color: #6b7280;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .tips {
+      text-align: left;
+      background: #f9fafb;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .tips h2 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 0.5rem;
+    }
+    
+    .tips ul {
+      padding-left: 1.25rem;
+      color: #6b7280;
+      font-size: 0.875rem;
+    }
+    
+    .tips li {
+      margin-bottom: 0.25rem;
+    }
+    
+    button {
+      background: #ea580c;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    button:hover {
+      background: #c2410c;
+    }
+    
+    button:focus {
+      outline: 2px solid #ea580c;
+      outline-offset: 2px;
+    }
+    
+    .favorites-link {
+      display: block;
+      margin-top: 1rem;
+      color: #ea580c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .favorites-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="offline-title">
+    <div class="icon" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3" />
+      </svg>
+    </div>
+    
+    <h1 id="offline-title">You're Offline</h1>
+    <p>It looks like you've lost your internet connection. Don't worry, you can still access your saved favorites!</p>
+    
+    <div class="tips">
+      <h2>While you're offline:</h2>
+      <ul>
+        <li>View your saved favorite recipes</li>
+        <li>Remove recipes from favorites</li>
+        <li>Browse cached recipe details</li>
+      </ul>
+    </div>
+    
+    <button onclick="window.location.reload()" type="button">
+      Try Again
+    </button>
+    
+    <a href="/favorites" class="favorites-link">
+      Go to My Favorites →
+    </a>
+  </main>
+</body>
+</html>
